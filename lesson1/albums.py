@@ -1,5 +1,5 @@
 """
-Создай класс Album у которого есть поля
+Создай клAlbum у которого есть поля
 
 - Исполнитель (artist) - строка
 - Название (title) - строка
@@ -21,15 +21,20 @@
 """
 
 
-class ...:
+class Album:
+    """ Class for representing artist's albums"""
+    artist: str
+    title: str
+    tracks: list
 
-    def ...:
-    ...
+    def __init__(self, artist, title, tracks):
+        self.artist = artist
+        self.title = title
+        self.tracks = tracks
 
+album_1 = Album('Queen', 'Killer Queen', ['Brighton rock', 'Killer Queen', 'Tenement Funster'])
 
-album_1 = Album(...)
-
-album_2 = ...
+album_2 = Album('Metallica', 'Black Album', ['Enter Sandman', 'Sad But True', 'Holier Than Thou'])
 
 
 # код для проверки 
